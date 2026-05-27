@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrihari Pote | Portfolio</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Shrihari Pote</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="hero">
+
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+         alt="Shrihari Profile Photo"
+         class="profile-pic">
+
+    <h2>Shrihari Pote</h2>
+
+    <p>First Year Student • Python Enthusiast • Problem Solver</p>
+
+    <a href="#projects" class="btn">View My Projects</a>
+    <a href="{{ url_for('static', filename='files/resume.pdf') }}"
+   download
+   class="btn resume-btn">
+   Download Resume
+</a>
+<div class="social-icons">
+
+    <a href="https://github.com/shriharipote" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="www.linkedin.com/in/shrihari-pote-9998a831a" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/shriharipote.1312/?__pwa=1#" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+</div>
+
+</section>
+
+        <section id="about">
+        <h2>About Me</h2>
+        <p>First-year Computer Engineering student from Pune. Passionate about coding, debugging, and building useful tools. 
+        Currently developing <strong>BugFinder</strong> — an intelligent error log analyzer using Python.</p>
+        <p>Always eager to learn new technologies and work on real-world projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>BugFinder</h3>
+            <p>Error Log Analyzer with Root Cause Detection</p>
+            <a href="https://github.com/shriharipote/bugfinder" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+    <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="project-card">
+        <h3>Programming</h3>
+        <p>Python, HTML, CSS, Flask</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Tools</h3>
+        <p>GitHub, VS Code, Debugging, Problem Solving</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="project-card">
+        <h3>Computer Engineering</h3>
+        <p>First Year Student</p>
+        <p>Pune, Maharashtra</p>
+    </div>
+</section>
+
+<section id="more-projects">
+    <h2>More Projects</h2>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio built using Flask and modern CSS.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Future AI Assistant</h3>
+        <p>Planning to build an AI assistant inspired by Bhagavad Gita wisdom.</p>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="project-card">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <footer id="contact">
+        <p>Contact: poteshreehari@gmail.com | Pune, Maharashtra</p>
+    </footer>
+</body>
+</html>
